@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スロットゲーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>スロットゲーム</h1>
+    </header>
+
+    <main>
+        <div id="coin-display">
+            現在のコイン: <span id="current-coins">100</span>
+        </div>
+
+        <div id="slot-machine">
+            <div class="reel" id="reel-1"></div>
+            <div class="reel" id="reel-2"></div>
+            <div class="reel" id="reel-3"></div>
+        </div>
+
+        <button id="spin-button">SPIN</button>
+
+        <div id="message-area">
+            <p id="result-message">「SPIN」を押してゲーム開始！</p>
+        </div>
+
+        <section id="how-to-play">
+            <h2>遊び方</h2>
+            <ul>
+                <li>「SPIN」ボタンを押すとリールが回転します。</li>
+                <li>揃った役に応じてコインを獲得できます。</li>
+                <li>コインが0になるとゲーム終了です。</li>
+            </ul>
+            </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

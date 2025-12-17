@@ -1,0 +1,54 @@
+/* リセット・基本設定 */
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* スロットマシン全体 */
+#slot-machine {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px auto;
+    border: 5px solid #333;
+    padding: 10px;
+    background-color: #ccc;
+    width: fit-content;
+}
+
+/* 個々のリール */
+.reel {
+    width: 100px; /* リールの幅 */
+    height: 100px; /* リールの高さ (シンボル1個分の表示サイズ) */
+    overflow: hidden; /* 回転アニメーションのために必須 */
+    border: 2px solid #000;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    /* 初期シンボル画像を設定する場合、ここに追加のCSSが必要です */
+}
+
+/* スピンボタン */
+#spin-button {
+    padding: 10px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/* シンボル (JavaScriptで動的に生成されます) */
+.symbol {
+    width: 100px; 
+    height: 100px; 
+    line-height: 100px; /* テスト用、画像を使用する場合は不要 */
+    font-size: 40px;
+    background-size: contain; /* 画像をリールサイズに合わせる */
+}
+
+/* その他の表示エリアのスタイル */
+#coin-display {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
